@@ -1,0 +1,7 @@
+# Copy to terraform.tfvars (that file is git-ignored)
+subscription_id     = "00000000-0000-0000-0000-000000000000"
+resource_group_name = "my-existing-rg"
+ssh_key_name        = "azure"
+
+# Recommended: only allow SSH from your home IP (curl -4 ifconfig.me)
+# allowed_ssh_cidr = "1.2.3.4/32"

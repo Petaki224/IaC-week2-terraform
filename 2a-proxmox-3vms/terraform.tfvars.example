@@ -1,0 +1,7 @@
+# Copy to terraform.tfvars (that file is git-ignored)
+pm_api_token = "terraform@pve!tf=00000000-0000-0000-0000-000000000000"
+
+# Optional overrides (defaults are in variables.tf)
+# pm_ssh_private_key_file = "~/.ssh/homelab"
+# ssh_public_key_file     = "~/.ssh/homelab.pub"
+# vm_user                 = "iac"

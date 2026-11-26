@@ -1,0 +1,10 @@
+#cloud-config
+# defer: write the file in the final stage, after Azure created the user,
+# so the owner can be set to ${username}
+write_files:
+  - path: /home/${username}/hello.txt
+    content: |
+      Hello World
+    owner: ${username}:${username}
+    permissions: "0644"
+    defer: true
