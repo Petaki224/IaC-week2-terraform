@@ -10,6 +10,12 @@ variable "pm_api_token" {
   sensitive   = true
 }
 
+variable "pm_ssh_private_key_file" {
+  description = "Private key that root@pve1 accepts"
+  type        = string
+  default     = "~/.ssh/homelab"
+}
+
 variable "node_name" {
   description = "Proxmox node to deploy on"
   type        = string
