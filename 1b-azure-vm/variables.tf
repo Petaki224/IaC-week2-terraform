@@ -27,7 +27,7 @@ variable "prefix" {
 variable "vm_size" {
   description = "Standard_B2ats_v2 or Standard_DS1_v2"
   type        = string
-  default     = "Standard_B2ats_v2"
+  default     = "Standard_DS1_v2"
 }
 
 variable "admin_username" {
